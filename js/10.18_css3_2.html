@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>3D转换正方体</title>
+</head>
+<style>
+.div_e{
+	width: 500px;
+	height: 500px;
+	border: 1px solid #000;
+	margin:80px auto;
+	transition:all 1s linear 0s;
+}
+.div_t{
+	width: 200px;
+	height: 200px;
+	border: 1px solid #666999;
+	margin:150px auto;
+	position: relative;
+}
+.div{
+	width: 200px;
+	height: 200px;
+	background: orange;
+	margin: 150px auto; 
+}
+.div_t div:nth-of-type(1){
+	background: purple;
+	position: absolute;
+	top:-100%;
+	left:0;
+	transform-origin: center bottom; 
+	transform:rotateX(-90deg);
+}
+.div_t div:nth-of-type(2){
+	background: red;
+	position: absolute;
+	top:100%;
+	left:0;
+	transform-origin: center top; 
+	transform:rotateX(-90deg);
+}
+.div_t div:nth-of-type(3){
+	background: #F92672;
+	position: absolute;
+	top:0;
+	left:-100%;
+	transform-origin: right center; 
+	transform:rotateY(-90deg);
+}
+.div_t div:nth-of-type(4){
+	background: green;
+	position: absolute;
+	top:0;
+	right:-100%;
+	transform-origin: left center; 
+	transform:rotateY(-90deg);
+}
+.div_t div:nth-of-type(5){
+	background: pink;
+	position: absolute;
+	top:0;
+	right:0;
+
+}
+.div_t div:nth-of-type(6){
+	background: grey;
+	position: absolute;
+	top:0;
+	right:0;
+	/*transform:translate();*/
+}
+.div_t:hover{
+	transform:rotateY(360deg);
+}
+</style>
+<body>
+	<div class="div_e">
+		<div class="div_t">
+			<div class="div"></div>
+			<div class="div"></div>
+			<div class="div"></div>
+			<div class="div"></div>
+			<div class="div"></div>
+			<div class="div"></div>
+		</div>
+	</div>
+	
+</body>
+</html>

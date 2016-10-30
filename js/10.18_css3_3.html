@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>3D转动、六边体</title>
+</head>
+<style>
+#sence{
+	width: 800px;
+	height: 600px;
+	border:1px solid #000;
+	margin:30px auto;
+	perspective:2000px;
+}
+.box{
+	width:600px;
+	height: 300px;
+	border:1px solid #999666;
+	margin:150px auto;
+
+	position: relative;
+}
+.box div{
+	width: 300px;
+	height: 300px;
+	font-size: 40px;
+	text-align: center;
+	line-height: 300px;
+	color:#fff;
+	position: absolute;
+}
+.box div:nth-child(1){
+	left:150px;
+	top:0;
+	background: green;
+}
+.box div:nth-child(2){
+	/*left:150px;
+	top:0;*/
+	background: red;
+	transform-origin:right center;
+	transform:rotateY(120deg);
+}
+</style>
+<body>
+	<div id="sence">
+		<div class="box">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+		</div>
+	</div>
+</body>
+</html>

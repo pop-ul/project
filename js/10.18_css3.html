@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>2D转换</title>
+</head>
+<style>
+div{
+	width: 200px;
+	height: 200px;
+	background: red;
+	margin:40px auto;
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	line-height: 200px;
+	transition:all 1s linear 0s;
+}
+div:nth-child(1):hover{
+	transform:translate(100px,100px);
+	background: blue;
+}
+div:nth-child(2):hover{
+	transform:translateX(200px);
+	background: purple;
+}
+div:nth-child(3):hover{
+	transform:translateY(200px);
+	background: grey;
+}
+div:nth-child(4):hover{
+	transform:rotate(890deg);
+	background: blue;
+}
+div:nth-child(5):hover{
+	transform:rotateX(360deg);
+	background: purple;
+}
+div:nth-child(6):hover{
+	transform-origin:left center;
+}
+div:nth-child(6):hover{
+	transform:rotateY(80deg);
+	background: orange;
+}
+div:nth-child(7):hover{
+	transform:scale(2);
+	background: #669999;
+}
+div:nth-child(8):hover{
+	transform:scaleX(0.5);
+	background: purple;
+}
+div:nth-child(9):hover{
+	transform:scale(0.5,1.5);
+	background: orange;
+}
+div:nth-child(10):hover{
+	transform:skew(45deg,60deg);	/*-45deg*/
+	background: blue;
+}
+div:nth-child(11):hover{
+	transform:skewX(45deg);
+	background: purple;
+}
+div:nth-child(12):hover{
+	transform:skewY(45deg);
+	background: purple;
+}
+.miedian{
+	width: 500px;
+	height: 500px;
+	border:1px solid #000;
+	perspective:45px;
+	perspective-origin:left center;
+	line-height: 500px;
+}
+#box_m{
+	width: 200px;
+	height: 200px;
+	background: blue;
+}
+#box_m:hover{
+	transform:translateY(90px);
+}
+</style>
+<body>
+	<div id="box">1</div>
+	<div id="box">2</div>
+	<div id="box">3</div>
+	<div id="box">4</div>
+	<div id="box">5</div>
+	<div id="box">6</div>
+	<div id="box">7</div>
+	<div id="box">8</div>
+	<div id="box">9</div>
+	<div id="box">10</div>
+	<div id="box">11</div>
+	<div id="box">12</div>
+	<div class="miedian">
+		<div id="box_m">13</div>
+		
+	</div>
+	<div id="box">14</div>
+</body>
+</html>
